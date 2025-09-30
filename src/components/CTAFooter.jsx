@@ -234,7 +234,7 @@ export const CTAFooter = () => {
             transition={{ delay: 0.6 }}
           >
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p>&copy; 2024 Squash Academy. All rights reserved.</p>
+              <p>&copy; 2024 Squash@Work. All rights reserved.</p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <button className="hover:text-orange-400 transition-colors">Privacy Policy</button>
                 <button className="hover:text-orange-400 transition-colors">Terms of Service</button>

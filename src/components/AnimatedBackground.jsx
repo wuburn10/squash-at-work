@@ -4,74 +4,73 @@ import { motion } from "framer-motion";
 export const AnimatedBackground = () => {
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {/* Animated court lines */}
+      {/* Background Image */}
       <motion.div
-        className="absolute inset-0 opacity-20"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.2 }}
+        className="absolute inset-0"
+        initial={{ scale: 1.1, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 2 }}
       >
-        {/* Vertical lines */}
-        {[...Array(8)].map((_, i) => (
+        <img
+          src="/src/assets/squash-court.jpg"
+          alt="Squash Court"
+          className="w-full h-full object-cover"
+        />
+      </motion.div>
+
+      {/* Animated court lines overlay (subtle) */}
+      <motion.div
+        className="absolute inset-0 opacity-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.1 }}
+        transition={{ duration: 2, delay: 1 }}
+      >
+        {/* Subtle vertical lines */}
+        {[...Array(4)].map((_, i) => (
           <motion.div
             key={`v-${i}`}
             className="absolute h-full w-0.5 bg-white"
-            style={{ left: `${12.5 * (i + 1)}%` }}
+            style={{ left: `${25 * (i + 1)}%` }}
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
             transition={{ 
-              delay: i * 0.1, 
-              duration: 0.8,
+              delay: i * 0.2, 
+              duration: 1,
               repeat: Infinity,
               repeatType: "reverse",
-              repeatDelay: 3
-            }}
-          />
-        ))}
-        
-        {/* Horizontal lines */}
-        {[...Array(6)].map((_, i) => (
-          <motion.div
-            key={`h-${i}`}
-            className="absolute w-full h-0.5 bg-white"
-            style={{ top: `${16.67 * (i + 1)}%` }}
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ 
-              delay: i * 0.15, 
-              duration: 0.8,
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 4
+              repeatDelay: 5
             }}
           />
         ))}
       </motion.div>
 
       {/* Floating particles */}
-      {[...Array(20)].map((_, i) => (
+      {[...Array(15)].map((_, i) => (
         <motion.div
           key={`particle-${i}`}
-          className="absolute w-1 h-1 bg-white rounded-full opacity-30"
+          className="absolute w-1 h-1 bg-white rounded-full opacity-40"
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
           }}
           animate={{
-            y: [0, -20, 0],
-            opacity: [0.3, 0.8, 0.3],
-            scale: [1, 1.2, 1],
+            y: [0, -15, 0],
+            opacity: [0.4, 0.8, 0.4],
+            scale: [1, 1.1, 1],
           }}
           transition={{
-            duration: 3 + Math.random() * 2,
+            duration: 4 + Math.random() * 2,
             repeat: Infinity,
-            delay: Math.random() * 2,
+            delay: Math.random() * 3,
           }}
         />
       ))}
 
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-800/80 to-slate-900/90" />
+      {/* Enhanced gradient overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-800/75 to-slate-900/85" />
+      
+      {/* Additional dark overlay for text contrast */}
+      <div className="absolute inset-0 bg-black/20" />
     </div>
   );
 };
