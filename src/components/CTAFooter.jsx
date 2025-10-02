@@ -123,18 +123,18 @@ export const CTAFooter = () => {
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-orange-500" />
-                  <span>+60 12-345-6789</span>
+                  <span>+6016-9203537</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-orange-500" />
-                  <span>info@squashacademy.my</span>
+                  <span>squashatwork17@gmail.com</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 text-orange-500 mt-1" />
                   <div>
-                    <p>123 Sports Complex</p>
-                    <p>Kuala Lumpur, Malaysia</p>
-                    <p>50450</p>
+                    <p>SMK (L) Bukit Bintang</p>
+                    <p>Jalan Utara, PJS 52</p>
+                    <p>46200 PJ, Selangor, Malaysia</p>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Trophy, Calendar, MapPin, Users, Award, Globe } from "lucide-react";
+import { Trophy, Calendar, MapPin, Users, Award, Globe, Star } from "lucide-react";
 
 export const PastEventsSection = () => {
   const events = [

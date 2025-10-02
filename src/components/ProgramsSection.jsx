@@ -11,11 +11,11 @@ export const ProgramsSection = () => {
       name: "Grassroots Development (Twinkles)",
       ageGroup: "6-12 years",
       level: "Beginner",
-      frequency: "2-3 days a week",
-      duration: "1 hour per session",
-      focus: "Fun, Introductory to Squash",
-      description: "Perfect for young beginners to learn the fundamentals of squash in a fun, supportive environment.",
-      features: ["Basic technique development", "Hand-eye coordination", "Social skills", "Physical fitness"],
+      frequency: "3 days a week",
+      duration: "60 minutes per session",
+      focus: "Hand Eye Coordination, Reaction Timing, Basic Techniques",
+      description: "Perfect for young beginners to learn the fundamentals of squash through fun activities and basic racquet handling.",
+      features: ["Hand Eye Coordination", "Reaction Timing", "Basic Racquet Holding", "Basic Hitting Techniques"],
       icon: <Star className="w-8 h-8 text-orange-500" />
     },
     {
@@ -24,10 +24,10 @@ export const ProgramsSection = () => {
       ageGroup: "8-17 years",
       level: "Intermediate/Advanced",
       frequency: "4 days a week",
-      duration: "2 hours",
-      focus: "Intensive Training & Tournament Athletes",
-      description: "Designed for serious young players preparing for competitive tournaments.",
-      features: ["Advanced technique", "Match strategies", "Mental preparation", "Tournament preparation"],
+      duration: "2 hours per session",
+      focus: "Pressure Drills, Discipline, Game play, Tactical and Fitness",
+      description: "Designed for serious young players preparing for competitive tournaments with intensive training.",
+      features: ["Pressure Drills", "Discipline Training", "Game Play Practice", "Tactical Development", "Fitness Training"],
       icon: <Target className="w-8 h-8 text-orange-500" />
     },
     {
@@ -47,11 +47,11 @@ export const ProgramsSection = () => {
       name: "Sparring Sessions",
       ageGroup: "All ages",
       level: "All levels",
-      frequency: "2-3 times a week",
-      duration: "1.5 hours",
-      focus: "Match Practice",
-      description: "Regular sparring sessions to improve match play and competitive skills.",
-      features: ["Junior Squad", "Senior Squad", "Match experience", "Competitive practice"],
+      frequency: "Multiple sessions weekly",
+      duration: "2 hours",
+      focus: "Different States to spar and exposure",
+      description: "Regular sparring sessions with players from different states for competitive exposure.",
+      features: ["Junior Squad", "Senior Squad", "Interstate exposure", "Competitive practice"],
       icon: <Target className="w-8 h-8 text-orange-500" />
     },
     {
@@ -61,9 +61,9 @@ export const ProgramsSection = () => {
       level: "All levels",
       frequency: "Flexible",
       duration: "1 hour",
-      focus: "Physical Fitness",
-      description: "Sports-specific fitness training with certified trainers.",
-      features: ["Certified fitness trainer", "Sports-specific training", "Hand-eye coordination", "Injury prevention"],
+      focus: "Physical Fitness and Conditioning",
+      description: "Sports-specific fitness training with certified trainers to improve overall performance.",
+      features: ["Certified trainer", "Sports-specific training", "Injury prevention", "Performance enhancement"],
       icon: <Users className="w-8 h-8 text-orange-500" />
     },
     {

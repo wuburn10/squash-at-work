@@ -6,111 +6,58 @@ export const CoachesSection = () => {
   const coaches = [
     {
       id: 1,
-      name: "Coach Ahmad Rahman",
+      name: "Coach Shaun Low",
       title: "Head Coach & Academy Director",
-      credentials: "Ex-National Player, Level 3 Certified",
-      experience: "15+ years",
-      specialization: "Tournament Preparation & Advanced Technique",
-      bio: "Former Malaysian national team player with extensive international coaching experience. Specializes in developing competitive players for professional tournaments.",
+      credentials: "Professional Coach, Academy Founder",
+      experience: "8+ years",
+      specialization: "Youth Development & Academy Management",
+      bio: "Founder and head coach of Squash@Work Academy with 8 years of coaching experience. Passionate about developing young talent and building a strong squash community.",
       quote: "Every champion was once a beginner who refused to give up.",
       achievements: [
-        "Malaysian National Team (5 years)",
-        "Asian Games Bronze Medalist",
-        "Coached 20+ national junior champions"
+        "Founded Squash@Work Academy",
+        "8 years coaching experience",
+        "Developed 25-30 active students",
+        "Led 10 international friendlies"
       ],
-      programs: ["Competitive Prep", "Private Coaching"],
-      avatar: "👨‍🏫", // Placeholder
+      programs: ["All Programs", "Academy Management"],
+      avatar: "‍🏫", // Placeholder
       bgColor: "from-blue-500 to-blue-600"
     },
     {
       id: 2,
-      name: "Coach Sarah Lim",
-      title: "Youth Development Specialist",
-      credentials: "Level 2 Certified, Sports Psychology Diploma",
-      experience: "8+ years",
-      specialization: "Youth Development & Mental Coaching",
-      bio: "Passionate about nurturing young talent with a focus on building confidence and mental resilience alongside technical skills.",
-      quote: "It's not just about the game; it's about building character.",
+      name: "Assistant Coach",
+      title: "Program Assistant",
+      credentials: "To be updated",
+      experience: "To be confirmed",
+      specialization: "To be confirmed",
+      bio: "Supporting the academy's mission to develop squash talent across all age groups. More details to be updated.",
+      quote: "Dedication and practice lead to excellence.",
       achievements: [
-        "Youth Coach of the Year 2023",
-        "50+ junior players developed",
-        "Sports Psychology Certified"
+        "Supporting academy programs",
+        "Student development focus",
+        "Program assistance"
       ],
-      programs: ["Grassroot Development", "Holiday Camps"],
+      programs: ["Various Programs"],
       avatar: "👩‍🏫", // Placeholder
       bgColor: "from-purple-500 to-purple-600"
     },
     {
       id: 3,
-      name: "Coach David Chen",
-      title: "Technical Director",
-      credentials: "Ex-Professional Player, Level 3 Certified",
-      experience: "12+ years",
-      specialization: "Technical Analysis & Match Strategy",
-      bio: "Former professional circuit player with deep expertise in technical analysis and strategic game planning for competitive players.",
-      quote: "Precision in technique leads to excellence in performance.",
+      name: "Guest Coach",
+      title: "Specialized Training",
+      credentials: "To be updated",
+      experience: "To be confirmed",
+      specialization: "To be confirmed",
+      bio: "Bringing specialized expertise to enhance the academy's training programs. Details to be confirmed.",
+      quote: "Excellence is achieved through continuous improvement.",
       achievements: [
-        "Professional PSA Circuit (6 years)",
-        "Technical Analysis Expert",
-        "Video Analysis Specialist"
+        "Specialized training sessions",
+        "Guest coaching expertise",
+        "Program enhancement"
       ],
-      programs: ["Competitive Prep", "Video Analysis"],
-      avatar: "👨‍💼", // Placeholder
+      programs: ["Specialized Sessions"],
+      avatar: "�‍💼", // Placeholder
       bgColor: "from-green-500 to-green-600"
-    },
-    {
-      id: 4,
-      name: "Coach Maria Santos",
-      title: "Adult Program Coordinator",
-      credentials: "Level 2 Certified, Adult Education Specialist",
-      experience: "6+ years",
-      specialization: "Adult Learning & Fitness Integration",
-      bio: "Specializes in teaching adult beginners with a focus on fitness, fun, and practical skill development for busy professionals.",
-      quote: "It's never too late to discover your passion for squash.",
-      achievements: [
-        "Adult Education Certified",
-        "100+ adult beginners coached",
-        "Corporate Training Specialist"
-      ],
-      programs: ["Weekend Warriors", "Corporate Training"],
-      avatar: "👩‍💼", // Placeholder
-      bgColor: "from-pink-500 to-pink-600"
-    },
-    {
-      id: 5,
-      name: "Coach Kevin Tan",
-      title: "Fitness & Conditioning Coach",
-      credentials: "Certified Strength Coach, Sports Science Degree",
-      experience: "10+ years",
-      specialization: "Sports-Specific Fitness & Injury Prevention",
-      bio: "Sports science graduate specializing in squash-specific fitness training and injury prevention protocols for athletes of all levels.",
-      quote: "Strong body, strong mind, strong game.",
-      achievements: [
-        "Sports Science Degree",
-        "Certified Strength Coach",
-        "Injury Prevention Specialist"
-      ],
-      programs: ["Strength & Conditioning", "All Programs"],
-      avatar: "🏋️‍♂️", // Placeholder
-      bgColor: "from-orange-500 to-red-500"
-    },
-    {
-      id: 6,
-      name: "Coach Lisa Wong",
-      title: "Junior Development Coach",
-      credentials: "Level 2 Certified, Child Development Specialist",
-      experience: "7+ years",
-      specialization: "Early Child Development & Fun-based Learning",
-      bio: "Expert in making squash enjoyable for young children while building fundamental skills through creative and engaging training methods.",
-      quote: "Learning through play creates lifelong passion.",
-      achievements: [
-        "Child Development Certified",
-        "Fun-based Learning Expert",
-        "200+ children coached"
-      ],
-      programs: ["Twinkles Program", "Holiday Camps"],
-      avatar: "👩‍🎓", // Placeholder
-      bgColor: "from-teal-500 to-cyan-500"
     }
   ];
 
