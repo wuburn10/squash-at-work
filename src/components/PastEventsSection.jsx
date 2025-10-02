@@ -126,14 +126,16 @@ export const PastEventsSection = () => {
 
         {/* Timeline */}
         <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-orange-300 transform md:-translate-x-0.5" />
+          {/* Vertical line - hidden on mobile, visible on md+ */}
+          <div className="hidden xl:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-orange-300 transform -translate-x-0.5" />
+          {/* Mobile line */}
+          <div className="block xl:hidden absolute left-4 top-0 bottom-0 w-0.5 bg-orange-300" />
 
           {events.map((event, index) => (
             <motion.div
               key={event.id}
-              className={`relative flex items-center mb-12 ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              className={`relative flex items-center mb-2 xl:mb-2 ${
+                index % 2 === 0 ? "xl:flex-row" : "xl:flex-row-reverse"
               }`}
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -141,12 +143,12 @@ export const PastEventsSection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               {/* Timeline dot */}
-              <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-orange-500 rounded-full transform -translate-x-2 md:-translate-x-2 z-10" />
+              <div className="absolute left-4 xl:left-1/2 w-4 h-4 bg-orange-500 rounded-full transform -translate-x-2 xl:-translate-x-2 z-10 shadow-xl" />
 
               {/* Content card */}
-              <div className={`ml-12 md:ml-0 flex-1 ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"}`}>
+              <div className={`ml-12 xl:ml-0 flex-1 ${index % 2 === 0 ? "xl:pr-8" : "xl:pl-8"} max-w-xl xl:max-w-xl ${index % 2 === 0 ? "xl:ml-auto" : "xl:mr-auto"}`}>
                 <motion.div
-                  className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+                  className="bg-white rounded-xl shadow-xl p-6 hover:shadow-xl transition-shadow duration-300"
                   whileHover={{ y: -5 }}
                 >
                   <div className="flex items-center justify-between mb-4">
@@ -175,10 +177,10 @@ export const PastEventsSection = () => {
                       <MapPin className="w-4 h-4 mr-2" />
                       {event.location}
                     </div>
-                    <div className="flex items-center text-orange-600 font-semibold">
+                    {/* <div className="flex items-center text-orange-600 font-semibold">
                       <Trophy className="w-4 h-4 mr-2" />
                       {event.achievement}
-                    </div>
+                    </div> */}
                   </div>
                 </motion.div>
               </div>

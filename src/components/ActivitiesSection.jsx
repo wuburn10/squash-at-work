@@ -66,7 +66,7 @@ export const ActivitiesSection = () => {
       title: "Workshop Sessions",
       description: "Special workshops on tactics, mental preparation, and equipment knowledge",
       icon: <Calendar className="w-8 h-8" />,
-      frequency: "Bi-weekly",
+      frequency: "Occasional",
       programs: ["All Programs"]
     },
     {

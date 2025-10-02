@@ -59,7 +59,7 @@ export const CTAFooter = () => {
               </motion.button>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               className="flex items-center justify-center space-x-2 text-orange-200"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -70,7 +70,7 @@ export const CTAFooter = () => {
               <span className="text-sm font-medium">
                 ⚠️ Limited slots available per program
               </span>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </div>
       </div>
