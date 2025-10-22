@@ -47,13 +47,18 @@ export const Navigation = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <motion.div
-              className="flex-shrink-0"
+              className="flex-shrink-0 flex items-center"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <span className="text-2xl font-bold text-white">
+              <img 
+                src="/src/assets/logo.png" 
+                alt="Squash@Work Logo" 
+                className="h-10 w-auto mr-2"
+              />
+              {/* <span className="text-2xl font-bold text-white hidden sm:inline">
                 Squash<span className="text-orange-500">@Work</span>
-              </span>
+              </span> */}
             </motion.div>
 
             {/* Desktop Navigation */}

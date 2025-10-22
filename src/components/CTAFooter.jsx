@@ -50,13 +50,13 @@ export const CTAFooter = () => {
                 <ExternalLink className="w-5 h-5" />
               </motion.button>
 
-              <motion.button
+              {/* <motion.button
                 className="border-2 border-white text-white hover:bg-white hover:text-orange-600 px-8 py-4 rounded-full text-lg font-bold transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Book a Trial Session
-              </motion.button>
+              </motion.button> */}
             </motion.div>
 
             {/* <motion.div
@@ -86,9 +86,16 @@ export const CTAFooter = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h3 className="text-2xl font-bold text-orange-500 mb-4">
-                Squash@Work
-              </h3>
+              <div className="flex items-center mb-4">
+                <img 
+                  src="/src/assets/logo.png" 
+                  alt="Squash@Work Logo" 
+                  className="h-12 w-auto mr-3"
+                />
+                {/* <h3 className="text-2xl font-bold text-orange-500">
+                  Squash@Work
+                </h3> */}
+              </div>
               <p className="text-gray-300 mb-6 leading-relaxed">
                 Malaysia's premier squash academy dedicated to developing champions through world-class coaching and comprehensive training programs.
               </p>
