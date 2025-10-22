@@ -271,14 +271,14 @@ export const TestimonialsSection = () => {
             ))}
           </div>
 
-          <div className="text-center mt-8">
+          {/* <div className="text-center mt-8">
             <p className="text-gray-600 mb-4">
               Want to share your own experience?
             </p>
             <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
               Submit Your Story
             </button>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>

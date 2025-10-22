@@ -1,22 +1,71 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const AnimatedBackground = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Import all hero images
+  const heroImages = [
+    "/src/assets/hero/photo_2025-10-23_00-04-42.jpg",
+    "/src/assets/hero/photo_2025-10-23_00-04-45.jpg",
+    "/src/assets/hero/photo_2025-10-23_00-04-49.jpg",
+    "/src/assets/hero/photo_2025-10-23_00-04-51.jpg",
+    "/src/assets/hero/photo_2025-10-23_00-04-53.jpg",
+    "/src/assets/hero/photo_2025-10-23_00-04-56.jpg",
+    "/src/assets/hero/photo_2025-10-23_00-04-57.jpg",
+    "/src/assets/hero/photo_2025-10-23_00-04-59.jpg",
+    "/src/assets/hero/photo_2025-10-23_00-05-00.jpg",
+    "/src/assets/hero/photo_2025-10-23_00-05-13.jpg",
+    "/src/assets/hero/photo_2025-10-23_00-05-15.jpg",
+    "/src/assets/hero/photo_2025-10-23_00-05-22.jpg",
+  ];
+
+  // Auto-slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % heroImages.length
+      );
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
+
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {/* Background Image */}
-      <motion.div
-        className="absolute inset-0"
-        initial={{ scale: 1.1, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 2 }}
-      >
-        <img
-          src="/src/assets/squash-court.jpg"
-          alt="Squash Court"
-          className="w-full h-full object-cover"
-        />
-      </motion.div>
+      {/* Sliding Background Images */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentImageIndex}
+          className="absolute inset-0"
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.95 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        >
+          <img
+            src={heroImages[currentImageIndex]}
+            alt={`Squash Academy ${currentImageIndex + 1}`}
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Slide indicators */}
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
+        {heroImages.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentImageIndex(index)}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              index === currentImageIndex 
+                ? "bg-orange-500 w-8" 
+                : "bg-white/50 hover:bg-white/80"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div> */}
 
       {/* Animated court lines overlay (subtle) */}
       <motion.div

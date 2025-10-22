@@ -96,13 +96,14 @@ export const CTAFooter = () => {
               {/* Social Media */}
               <div className="flex space-x-4">
                 {[
-                  { icon: <Facebook className="w-5 h-5" />, href: "#" },
-                  { icon: <Instagram className="w-5 h-5" />, href: "#" },
-                  { icon: <Youtube className="w-5 h-5" />, href: "#" }
+                  { icon: <Facebook className="w-5 h-5" />, href: "https://www.facebook.com/squashatwork/" },
+                  { icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/squashatwork17/" },
+                  // { icon: <Youtube className="w-5 h-5" />, href: "#" }
                 ].map((social, index) => (
                   <motion.a
                     key={index}
                     href={social.href}
+                    target="_blank"
                     className="bg-slate-800 hover:bg-orange-500 p-3 rounded-full transition-colors"
                     whileHover={{ scale: 1.1 }}
                   >
@@ -141,7 +142,7 @@ export const CTAFooter = () => {
             </motion.div>
 
             {/* Programs */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -162,10 +163,10 @@ export const CTAFooter = () => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </motion.div> */}
 
             {/* Quick Links */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -174,7 +175,7 @@ export const CTAFooter = () => {
               <h4 className="text-lg font-bold text-white mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-300">
                 {[
-                  { name: "About Us", href: "#about" },
+                  // { name: "About Us", href: "#about" },
                   { name: "Our Coaches", href: "#coaches" },
                   { name: "Testimonials", href: "#testimonials" },
                   { name: "Events Calendar", href: "#calendar" },
@@ -195,7 +196,7 @@ export const CTAFooter = () => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </motion.div> */}
           </div>
 
           {/* Stats Bar */}
@@ -235,11 +236,11 @@ export const CTAFooter = () => {
           >
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p>&copy; 2024 Squash@Work. All rights reserved.</p>
-              <div className="flex space-x-6 mt-4 md:mt-0">
+              {/* <div className="flex space-x-6 mt-4 md:mt-0">
                 <button className="hover:text-orange-400 transition-colors">Privacy Policy</button>
                 <button className="hover:text-orange-400 transition-colors">Terms of Service</button>
                 <button className="hover:text-orange-400 transition-colors">Refund Policy</button>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>
