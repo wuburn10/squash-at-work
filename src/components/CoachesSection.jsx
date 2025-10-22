@@ -20,17 +20,17 @@ export const CoachesSection = () => {
         "Led 10 international friendlies"
       ],
       programs: ["All Programs", "Academy Management"],
-      avatar: "‍🏫", // Placeholder
+      image: "/src/assets/coaches/Shaun.jpg",
       bgColor: "from-blue-500 to-blue-600"
     },
     {
       id: 2,
-      name: "Assistant Coach",
-      title: "Program Assistant",
+      name: "Coach Sattchin",
+      title: "Program Coach",
       credentials: "To be updated",
       experience: "To be confirmed",
       specialization: "To be confirmed",
-      bio: "Supporting the academy's mission to develop squash talent across all age groups. More details to be updated.",
+      bio: "Dedicated coach supporting the academy's mission to develop squash talent across all age groups. More details to be updated.",
       quote: "Dedication and practice lead to excellence.",
       achievements: [
         "Supporting academy programs",
@@ -38,13 +38,13 @@ export const CoachesSection = () => {
         "Program assistance"
       ],
       programs: ["Various Programs"],
-      avatar: "👩‍🏫", // Placeholder
+      image: "/src/assets/coaches/Sattchin.jpg",
       bgColor: "from-purple-500 to-purple-600"
     },
     {
       id: 3,
-      name: "Guest Coach",
-      title: "Specialized Training",
+      name: "Coach Lucas",
+      title: "Program Coach",
       credentials: "To be updated",
       experience: "To be confirmed",
       specialization: "To be confirmed",
@@ -56,7 +56,7 @@ export const CoachesSection = () => {
         "Program enhancement"
       ],
       programs: ["Specialized Sessions"],
-      avatar: "�‍💼", // Placeholder
+      image: "/src/assets/coaches/Lucas.jpg",
       bgColor: "from-green-500 to-green-600"
     }
   ];
@@ -93,18 +93,18 @@ export const CoachesSection = () => {
                 className="bg-slate-800 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 h-full"
                 whileHover={{ y: -10, scale: 1.02 }}
               >
-                {/* Header with gradient background */}
-                <div className={`bg-gradient-to-r ${coach.bgColor} p-6 text-center relative overflow-hidden`}>
-                  <div className="absolute inset-0 bg-black/20" />
-                  <div className="relative z-10">
-                    <div className="text-6xl mb-4">{coach.avatar}</div>
-                    <h3 className="text-xl font-bold mb-1">{coach.name}</h3>
-                    <p className="text-sm opacity-90 font-medium">{coach.title}</p>
+                {/* Header with coach image */}
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={coach.image} 
+                    alt={coach.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
+                    <h3 className="text-xl font-bold mb-1 text-white">{coach.name}</h3>
+                    <p className="text-sm text-orange-400 font-medium">{coach.title}</p>
                   </div>
-                  
-                  {/* Decorative elements */}
-                  <div className="absolute -top-10 -right-10 w-20 h-20 bg-white/10 rounded-full" />
-                  <div className="absolute -bottom-5 -left-5 w-15 h-15 bg-white/10 rounded-full" />
                 </div>
 
                 {/* Content */}
@@ -180,7 +180,7 @@ export const CoachesSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <motion.div
+        {/* <motion.div
           className="text-center mt-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -198,7 +198,7 @@ export const CoachesSection = () => {
           >
             Meet Our Coaches
           </motion.button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

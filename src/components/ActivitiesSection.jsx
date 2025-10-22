@@ -171,7 +171,7 @@ export const ActivitiesSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <motion.div
+        {/* <motion.div
           className="text-center mt-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -189,7 +189,7 @@ export const ActivitiesSection = () => {
           >
             Book a Trial Session
           </motion.button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

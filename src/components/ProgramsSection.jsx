@@ -160,7 +160,7 @@ export const ProgramsSection = () => {
         </div>
 
         {/* Contact for Details */}
-        <motion.div
+        {/* <motion.div
           className="text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -172,7 +172,7 @@ export const ProgramsSection = () => {
           >
             Contact Us for Program Details & Pricing
           </button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
