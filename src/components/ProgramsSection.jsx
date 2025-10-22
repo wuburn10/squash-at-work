@@ -102,14 +102,14 @@ export const ProgramsSection = () => {
           {programs.map((program, index) => (
             <motion.div
               key={program.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group flex flex-col"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -5 }}
             >
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="flex items-center justify-between mb-4">
                   {program.icon}
                   <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">
@@ -140,7 +140,7 @@ export const ProgramsSection = () => {
                   </div>
                 </div>
 
-                <div className="space-y-1 mb-4">
+                <div className="space-y-1 mb-6">
                   {program.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center text-sm text-gray-600">
                       <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2" />
@@ -149,7 +149,7 @@ export const ProgramsSection = () => {
                   ))}
                 </div>
 
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center mt-auto">
                   <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors">
                     Learn More
                   </button>
