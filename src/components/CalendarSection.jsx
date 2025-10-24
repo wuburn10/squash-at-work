@@ -17,111 +17,75 @@ export const CalendarSection = () => {
   const events = [
     {
       id: 1,
-      title: "Winter Holiday Camp Registration Opens",
-      date: "October 1, 2024",
-      time: "9:00 AM",
-      type: "registration",
-      location: "Online Registration",
-      description: "Early bird registration for December holiday camp. Limited to 30 participants.",
+      title: "Referee Workshop by Squash@Work",
+      date: "November 7-8, 2025",
+      time: "All Day",
+      type: "workshop",
+      location: "Academy Training Hall",
+      description: "Professional referee workshop conducted by Mr Constantine (Regional Referee). Learn the fundamentals of squash officiating.",
       priority: "high",
-      category: "camp",
-      participants: "Ages 6-17"
+      category: "workshop",
+      participants: "All Levels"
     },
     {
       id: 2,
-      title: "Inter-Academy Championship",
-      date: "October 15-16, 2024",
-      time: "8:00 AM - 6:00 PM",
+      title: "redOne Selangor State Close 2025",
+      date: "November 12-15, 2025",
+      time: "All Day",
       type: "tournament",
-      location: "Academy Courts 1-4",
-      description: "Regional championship featuring 8 academies from Malaysia and Singapore.",
+      location: "Selangor State Venue",
+      description: "Prestigious state-level tournament. Squash@Work coaches and players will be participating.",
       priority: "high",
       category: "tournament",
-      participants: "Competitive Players"
+      participants: "State Players"
     },
     {
       id: 3,
-      title: "Parent-Child Fun Tournament",
-      date: "October 22, 2024",
-      time: "10:00 AM - 2:00 PM",
-      type: "event",
-      location: "All Academy Courts",
-      description: "Fun doubles tournament for parents and children to play together.",
-      priority: "medium",
-      category: "family",
-      participants: "All Ages"
-    },
-    {
-      id: 4,
-      title: "Technical Workshop: Advanced Serve Techniques",
-      date: "November 5, 2024",
-      time: "2:00 PM - 4:00 PM",
-      type: "workshop",
-      location: "Court 2",
-      description: "Specialized workshop focusing on advanced serving techniques with Coach David.",
-      priority: "medium",
-      category: "workshop",
-      participants: "Intermediate/Advanced"
-    },
-    {
-      id: 5,
-      title: "International Friendly - Thailand Academy",
-      date: "November 12-14, 2024",
+      title: "Singapore Club (Jaz) Team Friendly",
+      date: "November 28-30, 2025",
       time: "All Day",
       type: "exchange",
-      location: "Bangkok, Thailand",
-      description: "Cultural and sports exchange program with Bangkok Squash Academy.",
+      location: "Singapore",
+      description: "International friendly match with Singapore Club. Cultural and competitive exchange program.",
       priority: "high",
       category: "international",
       participants: "Selected Players"
     },
     {
-      id: 6,
-      title: "Adult Beginner Course Starts",
-      date: "November 18, 2024",
-      time: "7:00 PM - 9:00 PM",
-      type: "program",
-      location: "Court 3",
-      description: "6-week beginner course for adults new to squash.",
-      priority: "medium",
-      category: "adult",
-      participants: "Adults 18+"
-    },
-    {
-      id: 7,
-      title: "Annual Academy Awards Ceremony",
-      date: "December 3, 2024",
-      time: "6:00 PM - 9:00 PM",
-      type: "ceremony",
-      location: "Academy Hall",
-      description: "Celebrating student achievements, coach recognition, and year highlights.",
-      priority: "high",
-      category: "ceremony",
-      participants: "All Academy Members"
-    },
-    {
-      id: 8,
-      title: "Winter Holiday Intensive Camp",
-      date: "December 16-27, 2024",
-      time: "9:00 AM - 4:00 PM",
-      type: "camp",
-      location: "All Academy Facilities",
-      description: "Two-week intensive training camp with guest international coaches.",
-      priority: "high",
-      category: "camp",
-      participants: "All Levels"
-    },
-    {
-      id: 9,
-      title: "New Year Challenge Tournament",
-      date: "January 4-5, 2025",
-      time: "8:00 AM - 6:00 PM",
+      id: 4,
+      title: "REDTONE 17th KL Junior Open 2025",
+      date: "December 2-7, 2025",
+      time: "All Day",
       type: "tournament",
-      location: "Academy Courts",
-      description: "Start the new year with competitive matches across all age categories.",
+      location: "Kuala Lumpur",
+      description: "Major junior tournament in KL. Squash@Work coaches will be on-site providing coaching services.",
       priority: "high",
       category: "tournament",
-      participants: "All Levels"
+      participants: "Junior Players"
+    },
+    {
+      id: 5,
+      title: "Oncocare Singapore Junior Open 2025",
+      date: "December 8-14, 2025",
+      time: "All Day",
+      type: "tournament",
+      location: "Singapore",
+      description: "International junior tournament in Singapore. Competitive opportunity for academy players.",
+      priority: "high",
+      category: "tournament",
+      participants: "Junior Elite"
+    },
+    {
+      id: 6,
+      title: "Squash@Work 2nd Leg Ultra Games 2025",
+      date: "December 26-29, 2025",
+      time: "All Day",
+      type: "tournament",
+      location: "Academy Courts",
+      description: "Second leg of the Ultra Games tournament series hosted by Squash@Work Academy. Premier end-of-year event.",
+      priority: "high",
+      category: "tournament",
+      participants: "All Categories"
     }
   ];
 
@@ -273,6 +237,7 @@ export const CalendarSection = () => {
                       className="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
+                      onClick={() => window.open("https://www.instagram.com/squashatwork17/", "_blank")}
                     >
                       {event.type === "registration" ? "Register Now" : 
                        event.type === "tournament" ? "View Details" : 
