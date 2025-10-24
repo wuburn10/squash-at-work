@@ -2,6 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Award, Star, Quote, Users, Target, Zap } from "lucide-react";
 
+// Import coach images
+import shaunImage from "../assets/coaches/Shaun.jpg";
+import sattchinImage from "../assets/coaches/Sattchin.jpg";
+import lucasImage from "../assets/coaches/Lucas.jpg";
+
 export const CoachesSection = () => {
   const coaches = [
     {
@@ -21,7 +26,7 @@ export const CoachesSection = () => {
         "Led 10 international friendlies"
       ],
       programs: ["All Programs", "Academy Management"],
-      image: "/src/assets/coaches/Shaun.jpg",
+      image: shaunImage,
       bgColor: "from-blue-500 to-blue-600"
     },
     {
@@ -40,7 +45,7 @@ export const CoachesSection = () => {
         "Assisted in International Friendlies (China, Singapore, Hong Kong, Taiwan)"
       ],
       programs: ["Junior Development", "Tournament Preparation"],
-      image: "/src/assets/coaches/Sattchin.jpg",
+      image: sattchinImage,
       bgColor: "from-purple-500 to-purple-600"
     },
     {
@@ -58,7 +63,7 @@ export const CoachesSection = () => {
         "Program enhancement"
       ],
       programs: ["Specialized Sessions"],
-      image: "/src/assets/coaches/Lucas.jpg",
+      image: lucasImage,
       bgColor: "from-green-500 to-green-600"
     }
   ];

@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "../lib/utils";
 
+// Import logo
+import logoImage from "../assets/logo.png";
+
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -52,7 +55,7 @@ export const Navigation = () => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <img 
-                src="/src/assets/logo.png" 
+                src={logoImage} 
                 alt="Squash@Work Logo" 
                 className="h-10 w-auto mr-2"
               />

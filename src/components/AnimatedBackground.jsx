@@ -1,23 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Import all hero images
+import hero1 from "../assets/hero/photo_2025-10-23_00-04-42.jpg";
+import hero2 from "../assets/hero/photo_2025-10-23_00-04-45.jpg";
+import hero3 from "../assets/hero/photo_2025-10-23_00-04-49.jpg";
+import hero4 from "../assets/hero/photo_2025-10-23_00-04-51.jpg";
+import hero5 from "../assets/hero/photo_2025-10-23_00-04-53.jpg";
+import hero6 from "../assets/hero/photo_2025-10-23_00-04-56.jpg";
+import hero7 from "../assets/hero/photo_2025-10-23_00-04-57.jpg";
+import hero8 from "../assets/hero/photo_2025-10-23_00-04-59.jpg";
+import hero9 from "../assets/hero/photo_2025-10-23_00-05-00.jpg";
+import hero10 from "../assets/hero/photo_2025-10-23_00-05-13.jpg";
+import hero11 from "../assets/hero/photo_2025-10-23_00-05-15.jpg";
+import hero12 from "../assets/hero/photo_2025-10-23_00-05-22.jpg";
+
 export const AnimatedBackground = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Import all hero images
+  // Array of imported images
   const heroImages = [
-    "/src/assets/hero/photo_2025-10-23_00-04-42.jpg",
-    "/src/assets/hero/photo_2025-10-23_00-04-45.jpg",
-    "/src/assets/hero/photo_2025-10-23_00-04-49.jpg",
-    "/src/assets/hero/photo_2025-10-23_00-04-51.jpg",
-    "/src/assets/hero/photo_2025-10-23_00-04-53.jpg",
-    "/src/assets/hero/photo_2025-10-23_00-04-56.jpg",
-    "/src/assets/hero/photo_2025-10-23_00-04-57.jpg",
-    "/src/assets/hero/photo_2025-10-23_00-04-59.jpg",
-    "/src/assets/hero/photo_2025-10-23_00-05-00.jpg",
-    "/src/assets/hero/photo_2025-10-23_00-05-13.jpg",
-    "/src/assets/hero/photo_2025-10-23_00-05-15.jpg",
-    "/src/assets/hero/photo_2025-10-23_00-05-22.jpg",
+    hero1, hero2, hero3, hero4, hero5, hero6,
+    hero7, hero8, hero9, hero10, hero11, hero12
   ];
 
   // Auto-slide effect

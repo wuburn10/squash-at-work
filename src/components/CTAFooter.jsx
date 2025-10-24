@@ -12,6 +12,9 @@ import {
   Youtube
 } from "lucide-react";
 
+// Import logo
+import logoImage from "../assets/logo.png";
+
 export const CTAFooter = () => {
   return (
     <section className="bg-gradient-to-br from-orange-600 to-orange-800 text-white">
@@ -88,7 +91,7 @@ export const CTAFooter = () => {
             >
               <div className="flex items-center mb-4">
                 <img 
-                  src="/src/assets/logo.png" 
+                  src={logoImage} 
                   alt="Squash@Work Logo" 
                   className="h-12 w-auto mr-3"
                 />
