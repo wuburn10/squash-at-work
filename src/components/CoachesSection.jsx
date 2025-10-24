@@ -8,13 +8,14 @@ export const CoachesSection = () => {
       id: 1,
       name: "Coach Shaun Low",
       title: "Head Coach & Academy Director",
-      credentials: "Professional Coach, Academy Founder",
+      credentials: "Professional Coach, Academy Co-Founder",
       experience: "8+ years",
       specialization: "Youth Development & Academy Management",
-      bio: "Founder and head coach of Squash@Work Academy with 8 years of coaching experience. Passionate about developing young talent and building a strong squash community.",
+      bio: "Co-founder and head coach of Squash@Work Academy with 8 years of coaching experience. Passionate about developing young talent and building a strong squash community.",
       quote: "Every champion was once a beginner who refused to give up.",
       achievements: [
-        "Founded Squash@Work Academy",
+        "Co-founded Squash@Work Academy",
+        "Founder of Sparring Overload (Junior and Senior)",
         "8 years coaching experience",
         "Developed 25-30 active students",
         "Led 10 international friendlies"
@@ -26,18 +27,19 @@ export const CoachesSection = () => {
     {
       id: 2,
       name: "Coach Sattchin",
-      title: "Program Coach",
-      credentials: "To be updated",
-      experience: "To be confirmed",
-      specialization: "To be confirmed",
-      bio: "Dedicated coach supporting the academy's mission to develop squash talent across all age groups. More details to be updated.",
+      title: "Professional Junior Development Coach",
+      credentials: "Active PSA Squash Athlete",
+      experience: "3+ Years Coaching, 10+ Years Squash Experience",
+      specialization: "Tournament & Event Management",
+      bio: "Professional junior development coach and active PSA squash athlete. Combines competitive experience with coaching expertise to develop the next generation of squash talent.",
       quote: "Dedication and practice lead to excellence.",
       achievements: [
-        "Supporting academy programs",
-        "Student development focus",
-        "Program assistance"
+        "State No.1 (2018-2020, 2024-Current)",
+        "Former National No.4",
+        "Led 8 National Junior Tournaments",
+        "Assisted in International Friendlies (China, Singapore, Hong Kong, Taiwan)"
       ],
-      programs: ["Various Programs"],
+      programs: ["Junior Development", "Tournament Preparation"],
       image: "/src/assets/coaches/Sattchin.jpg",
       bgColor: "from-purple-500 to-purple-600"
     },
