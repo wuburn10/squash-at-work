@@ -56,7 +56,7 @@ export const HeroSection = () => {
           </motion.button>
 
           <motion.button
-            onClick={() => window.open("https://forms.google.com", "_blank")}
+            onClick={() => window.open("https://wa.me/60169203537?text=Hi%20Squash%40Work!%20I'm%20interested%20in%20joining%20your%20academy.%20Please%20find%20my%20details%20below:%0A%0AName:%0AKid's%20Name%20(if%20applicable):%0AYears%20of%20Squash%20Experience:%0AProgram%20of%20Interest:%0A%0AThank%20you!", "_blank")}
             className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

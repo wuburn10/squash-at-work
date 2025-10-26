@@ -33,7 +33,7 @@ export const CTAFooter = () => {
             </h2>
 
             <p className="text-xl md:text-2xl text-orange-100 mb-8 max-w-3xl mx-auto">
-              Join Malaysia's premier squash academy and unlock your potential with world-class coaching and facilities.
+              Join Malaysia's premier squash academy and unlock your potential with world-class coaching. Contact us via WhatsApp to register!
             </p>
 
             <motion.div
@@ -44,12 +44,12 @@ export const CTAFooter = () => {
               transition={{ delay: 0.3 }}
             >
               <motion.button
-                onClick={() => window.open("https://forms.google.com", "_blank")}
+                onClick={() => window.open("https://wa.me/60169203537?text=Hi%20Squash%40Work!%20I'm%20interested%20in%20joining%20your%20academy.%20Please%20find%20my%20details%20below:%0A%0AName:%0AKid's%20Name%20(if%20applicable):%0AYears%20of%20Squash%20Experience:%0AProgram%20of%20Interest:%0A%0AThank%20you!", "_blank")}
                 className="bg-white text-orange-600 hover:bg-orange-50 px-8 py-4 rounded-full text-lg font-bold transition-colors shadow-lg flex items-center space-x-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span>Fill Up This Google Form</span>
+                <span>Contact via WhatsApp</span>
                 <ExternalLink className="w-5 h-5" />
               </motion.button>
 

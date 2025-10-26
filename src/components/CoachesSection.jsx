@@ -205,7 +205,7 @@ export const CoachesSection = () => {
             className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => window.open("https://forms.google.com", "_blank")}
+            onClick={() => window.open("https://wa.me/60169203537?text=Hi%20Squash%40Work!%20I'm%20interested%20in%20training%20with%20your%20coaching%20team.%20Please%20find%20my%20details%20below:%0A%0AName:%0AKid's%20Name%20(if%20applicable):%0AYears%20of%20Squash%20Experience:%0AProgram%20of%20Interest:%0A%0AThank%20you!", "_blank")}
           >
             Meet Our Coaches
           </motion.button>

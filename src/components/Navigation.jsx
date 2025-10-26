@@ -91,7 +91,7 @@ export const Navigation = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              onClick={() => window.open("https://forms.google.com", "_blank")}
+              onClick={() => window.open("https://wa.me/60169203537?text=Hi%20Squash%40Work!%20I'm%20interested%20in%20joining%20your%20academy.%20Please%20find%20my%20details%20below:%0A%0AName:%0AKid's%20Name%20(if%20applicable):%0AYears%20of%20Squash%20Experience:%0AProgram%20of%20Interest:%0A%0AThank%20you!", "_blank")}
             >
               Join Us
             </motion.button>
@@ -133,7 +133,7 @@ export const Navigation = () => {
             ))}
             <button
               className="w-full mt-4 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full font-medium"
-              onClick={() => window.open("https://forms.google.com", "_blank")}
+              onClick={() => window.open("https://wa.me/60169203537?text=Hi%20Squash%40Work!%20I'm%20interested%20in%20joining%20your%20academy.%20Please%20find%20my%20details%20below:%0A%0AName:%0AKid's%20Name%20(if%20applicable):%0AYears%20of%20Squash%20Experience:%0AProgram%20of%20Interest:%0A%0AThank%20you!", "_blank")}
             >
               Join Us
             </button>
@@ -149,7 +149,7 @@ export const Navigation = () => {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1 }}
-        onClick={() => window.open("https://forms.google.com", "_blank")}
+        onClick={() => window.open("https://wa.me/60169203537?text=Hi%20Squash%40Work!%20I'm%20interested%20in%20joining%20your%20academy.%20Please%20find%20my%20details%20below:%0A%0AName:%0AKid's%20Name%20(if%20applicable):%0AYears%20of%20Squash%20Experience:%0AProgram%20of%20Interest:%0A%0AThank%20you!", "_blank")}
       >
         Join
       </motion.button>
