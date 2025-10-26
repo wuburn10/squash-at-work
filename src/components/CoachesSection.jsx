@@ -50,19 +50,23 @@ export const CoachesSection = () => {
     },
     {
       id: 3,
-      name: "Coach Lucas",
-      title: "Program Coach",
-      credentials: "To be updated",
-      experience: "To be confirmed",
-      specialization: "To be confirmed",
-      bio: "Bringing specialized expertise to enhance the academy's training programs. Details to be confirmed.",
-      quote: "Excellence is achieved through continuous improvement.",
+      name: "Coach Lucas Low",
+      title: "Grassroots Development Specialist and Academy Management",
+      credentials: "WSF Level 3 Coach, Metafit Lvl1 Fitness Coach",
+      experience: "12+ years Coaching, 20+ years Squash Experience",
+      specialization: "Grassroots Development & Academy Management",
+      bio: "Co-founder of S@W Academy with extensive grassroots development expertise. Active PSA squash player combining competitive experience with comprehensive coaching qualifications.",
+      quote: "Building champions from the ground up through dedication and proper development.",
       achievements: [
-        "Specialized training sessions",
-        "Guest coaching expertise",
-        "Program enhancement"
+        "WSF Level 2 Coach",
+        "WSF Level 3 Coach",
+        "Metafit Lvl1 Fitness Coach",
+        "Active PSA Squash Player",
+        "Co-founded S@W Academy and Starhill Academy",
+        "Former National No.9 (U19)",
+        "Coordinates S@W activities/events including Friendlies, Workshops, and Tournaments (Ultra Games)"
       ],
-      programs: ["Specialized Sessions"],
+      programs: ["Grassroots Development", "Academy Management", "Fitness Training"],
       image: lucasImage,
       bgColor: "from-green-500 to-green-600"
     }
