@@ -39,7 +39,7 @@ function App() {
         <ActivitiesSection />
         <PastEventsSection />
         <CoachesSection />
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
         <CalendarSection />
       </main>
       <CTAFooter />
