@@ -148,12 +148,6 @@ export const ProgramsSection = () => {
                     </div>
                   ))}
                 </div>
-
-                <div className="flex items-center justify-center mt-auto">
-                  <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors">
-                    Learn More
-                  </button>
-                </div>
               </div>
             </motion.div>
           ))}

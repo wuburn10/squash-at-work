@@ -230,20 +230,6 @@ export const CalendarSection = () => {
                       </span>
                     )}
                   </div>
-
-                  {/* Action Button */}
-                  <div className="mt-4 pt-4 border-t border-slate-700">
-                    <motion.button
-                      className="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      onClick={() => window.open("https://www.instagram.com/squashatwork17/", "_blank")}
-                    >
-                      {event.type === "registration" ? "Register Now" : 
-                       event.type === "tournament" ? "View Details" : 
-                       "Learn More"}
-                    </motion.button>
-                  </div>
                 </div>
               </motion.div>
             </motion.div>
