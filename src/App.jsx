@@ -31,9 +31,9 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden w-full">
       <Navigation />
-      <main>
+      <main className="w-full overflow-x-hidden">
         <HeroSection />
         <ProgramsSection />
         <ActivitiesSection />
